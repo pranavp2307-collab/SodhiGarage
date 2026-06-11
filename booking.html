@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Sodhi Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Sodhi<span>Garage</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html" class="btn">Book Appointment</a>
+        </div>
+    </nav>
+
+    <section style="margin-top: 80px;">
+        <div class="text-center">
+            <h1>Secure Your Spot</h1>
+            <p style="color: var(--text-muted); margin-top: 10px;">Fill out the details below to schedule your detailing session.</p>
+        </div>
+
+        <div class="glass-card form-container">
+            <form id="booking-form">
+                <div class="grid" style="gap: 20px;">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" class="form-control" required placeholder="+91 XXXXX XXXXX">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Vehicle Make & Model</label>
+                    <input type="text" class="form-control" required placeholder="e.g., BMW 3 Series">
+                </div>
+
+                <div class="grid" style="gap: 20px;">
+                    <div class="form-group">
+                        <label>Select Service</label>
+                        <select id="service-select" class="form-control" required>
+                            <option value="" disabled selected>Choose a package...</option>
+                            <option value="basic">Basic Shine (1 Day)</option>
+                            <option value="premium">Premium Detail (2 Days)</option>
+                            <option value="ceramic">Ceramic Protection (3 Days)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Drop-off Date</label>
+                        <input type="date" id="date-select" class="form-control" required>
+                    </div>
+                </div>
+
+                <div id="pickup-display-box">
+                    <h3 style="color: #fff;">Estimated Pickup Date</h3>
+                    <p id="pickup-date-text" style="font-size: 1.2rem; font-weight: 600; color: var(--accent); margin-top: 5px;">-</p>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%; margin-top: 30px; font-size: 1.1rem;">Confirm Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sodhi Garage. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
